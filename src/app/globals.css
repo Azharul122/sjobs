@@ -1,0 +1,123 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.slim-scroll::-webkit-scrollbar {
+  width: 3px; /* Width of the scrollbar */
+  height: 5px;
+}
+
+.slim-scroll::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Track color */
+}
+
+.slim-scroll::-webkit-scrollbar-thumb {
+  background-color: #1bb68a; /* Thumb color */
+  border-radius: 1px; /* Rounded corners */
+}
+
+/* Optional: Hide scrollbar when inactive */
+.slim-scroll::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Thumb color on hover */
+}
+
+/* Ant design  */
+
+.ant-select-selector {
+  border: none !important;
+  box-shadow: none !important;
+}
+@media screen and (max-width: 1270px) and (min-width: 1024px) {
+  .wwa-cicrle {
+    margin-left: 160px;
+  }
+}
+@media screen and (max-width: 430px) and (min-width: 280px) {
+  .wwa-cicrle {
+    margin-left: 80px;
+  }
+}
+
+.slick-dots,
+.slick-dots-bottom,
+.custom-dots {
+  bottom: -100px !important;
+}
+
+/* hello */
+
+.interview-accordion .ant-collapse-item {
+  @apply rounded-md shadow-sm overflow-hidden bg-white;
+}
+
+.interview-accordion .ant-collapse-header {
+  @apply flex items-center justify-between hover:bg-gray-50 transition-all py-4 px-4;
+}
+
+.interview-accordion .ant-collapse-content {
+  @apply border-t border-gray-100;
+}
+
+.interview-accordion .ant-collapse-content-box {
+  @apply p-4;
+}
+
+.interview-accordion .ant-collapse-item:last-child {
+  @apply mb-0;
+}
+
+.interview-accordion .ant-collapse-header-text {
+  @apply flex-1;
+}
+
+/* This ensures the expand icon is properly aligned to the right */
+.interview-accordion .ant-collapse-expand-icon {
+  @apply ml-2;
+}
+
+/* .............................................. */
+
+.ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+  color: #004d6e !important;
+  font-weight: 500;
+}
+
+/* Editor */
+
+/* Rounded container for the entire editor */
+.rounded-quill-container {
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #d1d5db; /* Light gray border */
+}
+
+/* Rounded corners for toolbar */
+.rounded-quill-container .ql-toolbar.ql-snow {
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+  border: none;
+  background-color: #f3f4f6; /* Light gray background */
+}
+
+/* Rounded corners for editor area */
+.rounded-quill-container .ql-container.ql-snow {
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+  border: none;
+  background-color: white;
+}
+
+/* Editor content area */
+.rounded-quill-container .ql-editor {
+  min-height: 200px;
+  padding: 16px;
+}
+
+/* Hover effects */
+.rounded-quill-container:hover {
+  transition: all 0.2s ease;
+}
+
+:where(.css-1d4w9r2).ant-carousel .slick-dots li.slick-active::after {
+  transform: translateY(-5px) !important;
+}
